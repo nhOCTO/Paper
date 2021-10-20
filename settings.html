@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterCanvas Settings</title>
+    <script src="swalmin/sweetalert.min.js"></script>
+    <style>
+        body {
+            color: rgb(0,0,0);
+            background-color: rgb(255,255,255);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>BetterCanvas Settings</h1>
+
+    <h5>Customizations</h5>
+    <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Background Image</p>
+    <input id="file_upload" accept="image/*" style="display: inline-block;" type="file"></input>
+    <button id="resetbg">Remove Background</button>
+    <div></div>
+    <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Show Logo</p>
+    <input checked id="showlogo" style="display: inline-block;" value="true" type="checkbox"></input>
+    <div></div>
+    <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Show Transition Screen</p>
+    <input checked id="trans" style="display: inline-block;" value="true" type="checkbox"></input>
+    <div></div>
+    <h5>Theme Selection</h5>
+    <input id="lm" checked type="radio" name="theme">Light Mode</input>
+    <input id="dm" type="radio" name="theme">Dark Mode (WIP)</input>
+    <input id="cm" type="radio" name="theme">Custom Mode</input>
+
+    <div id="customtheme">
+        <h5>Custom Theme</h5>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Left Bar Color</p>
+        <input id="leftbar" style="display: inline-block;" value="#7f8d39" type="color"></input>
+        <button id="reset">Reset</button>
+        <div></div>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Right Bar Color</p>
+        <input id="rightbar" style="display: inline-block;" value="#ffffff" type="color"></input>
+        <button id="resetright">Reset</button>
+        <div></div>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Link Color</p>
+        <input id="link" style="display: inline-block;" value="#2e2e2e" type="color"></input>
+        <button id="resetl">Reset</button>
+        <div></div>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Main Text Color</p>
+        <input id="textcolor" style="display: inline-block;" value="#2e2e2e" type="color"></input>
+        <button id="resettc">Reset</button>
+        <div></div>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Background Color</p>
+        <input id="bgcolor" style="display: inline-block;" value="#2e2e2e" type="color"></input>
+        <button id="resetbgc">Reset</button>
+        <div></div>
+        <p style="display: inline-block; margin-right: 3%; margin-left: 3%;">Shadow Color</p>
+        <input id="scolor" style="display: inline-block;" value="#2e2e2e" type="color"></input>
+        <button id="resets">Reset</button>
+        <div></div>
+    </div>
+
+    <footer style="position: absolute;bottom: 0;width: 90%;height: 2.5rem; ">BetterCanvas by James Wilson</footer>
+
+    <script src="settingshandler.js"></script>
+</body>
+
+</html>
